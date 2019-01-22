@@ -1,0 +1,19 @@
+{
+  "name": "@sripberger/eslint-config",
+  "version": "0.0.1",
+  "description": "Personal ESLint Configuration",
+  "author": "Steve Ripberger",
+  "license": "MIT",
+  "repository": "github:sripberger/eslint-config",
+  "scripts": {
+    "lint": "eslint ."
+  },
+  "devDependencies": {
+    "eslint": "^5.11.1",
+    "eslint-plugin-jsdoc": "^3.15.1"
+  },
+  "peerDependencies": {
+    "eslint": "^5.x",
+    "eslint-plugin-jsdoc": "^3.x"
+  }
+}

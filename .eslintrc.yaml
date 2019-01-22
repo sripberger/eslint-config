@@ -1,0 +1,3 @@
+extends: ./index.js # Lint this project with it's own base rules.
+rules:
+    sort-keys: error # Require key sorting in config files.
