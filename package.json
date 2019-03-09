@@ -1,6 +1,6 @@
 {
   "name": "@sripberger/eslint-config",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Personal ESLint Configuration",
   "author": "Steve Ripberger",
   "license": "MIT",
