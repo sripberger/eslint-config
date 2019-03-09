@@ -78,6 +78,7 @@ module.exports = {
 		'indent': [
 			'error',
 			'tab',
+			{ SwitchCase: 1 },
 		],
 
 		// Jsdoc plugin rules
