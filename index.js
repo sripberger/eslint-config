@@ -142,7 +142,10 @@ module.exports = {
 		'no-extra-parens': [
 			'error',
 			'all',
-			{ enforceForArrowConditionals: false },
+			{
+				enforceForArrowConditionals: false,
+				nestedBinaryExpressions: false,
+			},
 		],
 		'no-floating-decimal': 'error',
 		'no-implicit-coercion': 'error',
