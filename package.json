@@ -1,0 +1,32 @@
+{
+	"name": "@sripberger/eslint-config",
+	"version": "0.0.0",
+	"description": "Personal eslint configuration for TypeScript projects in Node",
+	"author": "Steve Ripberger",
+	"license": "MIT",
+	"repository": "github:sripberger/eslint-config",
+	"files": [
+		"/base.js",
+		"/index.js",
+		"/test.js"
+	],
+	"scripts": {
+		"lint": "eslint .",
+		"lintfix": "npm run lint -- --fix",
+		"preversion": "npm run lint",
+		"prepublishOnly": "git push && git push --tags"
+	},
+	"devDependencies": {
+		"eslint": "^8.37.0"
+	},
+	"peerDependencies": {
+		"@typescript-eslint/eslint-plugin": "^5.3.0",
+		"@typescript-eslint/parser": "^5.3.0",
+		"eslint": "^8.0.0",
+		"eslint-import-resolver-typescript": "^3.6.0",
+		"eslint-plugin-import": "^2.28.0"
+	},
+	"dependencies": {
+		"@sripberger/eslint-config-plain": "^0.1.0"
+	}
+}
