@@ -1,6 +1,6 @@
 {
 	"name": "@sripberger/eslint-config",
-	"version": "0.1.3",
+	"version": "0.1.4",
 	"description": "Personal eslint configuration for TypeScript projects in Node",
 	"author": "Steve Ripberger",
 	"license": "MIT",
