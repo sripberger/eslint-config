@@ -89,6 +89,7 @@ module.exports = {
 		"@typescript-eslint/no-shadow": "error",
 		"@typescript-eslint/no-unnecessary-qualifier": "error",
 		"@typescript-eslint/no-unnecessary-type-assertion": "error",
+		"@typescript-eslint/no-unused-vars": "warn",
 		"@typescript-eslint/no-use-before-define": ["error", {functions: false}],
 		"@typescript-eslint/no-useless-constructor": "warn",
 		"@typescript-eslint/prefer-for-of": "error",
