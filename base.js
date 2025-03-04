@@ -3,6 +3,7 @@ import importPlugin from "eslint-plugin-import";
 import tseslint from "typescript-eslint";
 
 export default tseslint.config({
+	name: "@sripberger/eslint-config base TS overrides",
 	extends: [
 		...plain,
 		tseslint.configs.recommended,
