@@ -1,7 +1,7 @@
-module.exports = {
-	extends: "./base.js",
-	overrides: [{
-		extends: "./test.js",
-		files: ["*.spec.ts", "*.test.ts"],
-	}],
-};
+import base from "./base.js";
+import test from "./test.js";
+
+export default [
+	...base,
+	...test,
+];

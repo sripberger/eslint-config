@@ -1,25 +1,13 @@
-module.exports = {
+import plain from "@sripberger/eslint-config-plain";
+import importPlugin from "eslint-plugin-import";
+import tseslint from "typescript-eslint";
+
+export default tseslint.config({
 	extends: [
-		"@sripberger/eslint-config-plain",
-		"plugin:@typescript-eslint/recommended",
-		"plugin:import/recommended",
-		"plugin:import/typescript",
+		...plain,
+		tseslint.configs.recommended,
+		importPlugin.flatConfigs.recommended,
 	],
-	parser: "@typescript-eslint/parser",
-	parserOptions: {
-		ecmaVersion: 8,
-		project: "./tsconfig.json",
-	},
-	plugins: [
-		"@typescript-eslint",
-		"import",
-	],
-	settings: {
-		"import/resolver": {
-			node: true,
-			typescript: true,
-		},
-	},
 	rules: {
 		// Changes to base rules for TS compatibility.
 		"camelcase": "off", // Replaced by @typescript-eslint/naming-convention
@@ -36,7 +24,10 @@ module.exports = {
 		// Rules from @typescript-eslint plugin.
 		"@typescript-eslint/ban-ts-comment": "warn",
 		"@typescript-eslint/explicit-function-return-type": ["warn", {allowExpressions: true}],
-		"@typescript-eslint/explicit-member-accessibility": ["error", {accessibility: "no-public"}],
+		"@typescript-eslint/explicit-member-accessibility": [
+			"error",
+			{accessibility: "no-public"},
+		],
 		"@typescript-eslint/func-call-spacing": "error",
 		"@typescript-eslint/indent": ["error", "tab", {SwitchCase: 1}],
 		"@typescript-eslint/member-ordering": "warn",
@@ -112,9 +103,9 @@ module.exports = {
 		"import/no-self-import": "error",
 		"import/no-useless-path-segments": "error",
 		"import/order": ["error", {
-			"alphabetize": {order: "asc", caseInsensitive: true},
-			"newlines-between": "always",
-			"warnOnUnassignedImports": true,
+		    "alphabetize": {order: "asc", caseInsensitive: true},
+		    "newlines-between": "always",
+		    "warnOnUnassignedImports": true,
 		}],
 	},
-};
+});
