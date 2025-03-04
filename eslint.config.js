@@ -1,4 +1,4 @@
-import meta from "@sripberger/eslint-config-plain/meta.js";
+import meta from "@sripberger/eslint-config-plain/meta";
 
 export default [
 	...meta,
