@@ -11,6 +11,9 @@
 		"/index.js",
 		"/test.js"
 	],
+	"exports": {
+		".": "./index.js"
+	},
 	"scripts": {
 		"lint": "eslint .",
 		"lintfix": "npm run lint -- --fix",
