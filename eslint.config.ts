@@ -11,7 +11,7 @@ export default tseslint.config(
 	tseslint.configs.recommendedTypeChecked,
 	importX.flatConfigs.recommended,
 	{
-		name: "Plugin configuration",
+		name: "@sripberger/eslint-config: Plugin configuration",
 		plugins: {
 			"@stylistic": stylistic,
 		},
@@ -29,6 +29,10 @@ export default tseslint.config(
 				}),
 			],
 		},
+	},
+	{
+		name: "@sripberger/eslint-config: Global ignores",
+		ignores: ["dist"],
 	},
 	{
 		name: "@sripberger/eslint-config: Default for all ts files",
@@ -295,7 +299,6 @@ export default tseslint.config(
 		name: "@sripberger/eslint-config: Rules for eslint config files",
 		files: [
 			"eslint.config.ts",
-			"src/eslint.config.ts",
 		],
 		rules: {
 			"sort-keys": ["error", "asc", {

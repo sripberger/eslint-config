@@ -14,7 +14,7 @@
 		".": "./dist/eslint.config.js"
 	},
 	"scripts": {
-		"lint": "eslint eslint.config.ts",
+		"lint": "eslint .",
 		"lint-fix": "npm run lint -- --fix",
 		"build": "tsc",
 		"preversion": "npm run lint",
