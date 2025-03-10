@@ -1,6 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unsafe-argument */
-/* eslint-disable @typescript-eslint/no-unsafe-assignment */
-/* eslint-disable @typescript-eslint/no-unsafe-member-access */
 import js from "@eslint/js";
 import stylistic from "@stylistic/eslint-plugin";
 import {createTypeScriptImportResolver} from "eslint-import-resolver-typescript";
@@ -21,9 +18,7 @@ export default tseslint.config(
 		languageOptions: {
 			globals: globals.node,
 			parserOptions: {
-				projectService: {
-					allowDefaultProject: ["eslint.config.ts"],
-				},
+				projectService: true,
 				tsconfigRootDir: import.meta.dirname,
 			},
 		},
