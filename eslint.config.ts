@@ -37,8 +37,7 @@ export default tseslint.config(
 	{
 		name: "@sripberger/eslint-config: Default for all ts files",
 		files: [
-			"src/**/*.ts",
-			"eslint.config.ts",
+			"**/*.ts",
 		],
 		rules: {
 			// Base ESLint rules
